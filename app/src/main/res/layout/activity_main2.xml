@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Main2Activity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#00BCD4"
+        android:gravity="center"
+        android:text="最好看的书"
+        android:textColor="#fff"
+        android:textSize="50sp" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        fresco:placeholderImage="@mipmap/ic_launcher"
+        fresco:fadeDuration="3000"
+        fresco:failureImage="@mipmap/ic_launcher"
+
+        android:layout_marginTop="10dp" />
+</LinearLayout>
